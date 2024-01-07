@@ -1,0 +1,21 @@
+---
+import { LOCALE } from "@config";
+
+const localeProps = {
+  "lang": LOCALE.lang,
+  "dir": LOCALE.textDirection
+};
+
+---
+
+<!DOCTYPE html>
+<html {...localeProps} >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmitex</title>
+</head>
+<body>
+  <slot />
+</body>
+</html>
